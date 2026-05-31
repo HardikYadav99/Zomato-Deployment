@@ -1,6 +1,6 @@
 # 🚀 **End-to-End DevOps Architecture: Zomato Deployment**
 
-In this comprehensive DevOps project, I engineered and deployed a highly available **Zomato Clone Application**, contrasting traditional Continuous Integration pipelines with modern, declarative GitOps workflows on AWS. 
+In this comprehensive DevOps project, I engineered and deployed a highly available **Zomato Application**, contrasting traditional Continuous Integration pipelines with modern, declarative GitOps workflows on AWS. 
 
 ## 🛠️ Tech Stack & Tools
 
