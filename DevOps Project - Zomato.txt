@@ -87,8 +87,7 @@ Install below plugins:
 <Follow the process as explained in the video>
 
 11. SonarQube configuration in Jenkins
-<Follow the process as explained in the video>
-
+<Follow the process as explained in the video
 11.1. Tools Configuration in Jenkins
 <Follow the process as explained in the video>
 
@@ -258,9 +257,9 @@ wget https://github.com/prometheus/prometheus/releases/download/v2.47.1/promethe
 Extract Prometheus files, move them, and create directories:
 tar -xvf prometheus-2.47.1.linux-amd64.tar.gz
 cd prometheus-2.47.1.linux-amd64/
-sudo mkdir -p /data /etc/prometheus
+sudo mkdir -p /data /etc/prometheus                                
 sudo mv prometheus promtool /usr/local/bin/
-sudo mv consoles/ console_libraries/ /etc/prometheus/
+sudo mv consoles/ console_libraries/ /etc/prometheus/   (ignored this because new version does not require it, it works anywys on web interface )
 sudo mv prometheus.yml /etc/prometheus/prometheus.yml
 
 Set ownership for directories:

@@ -1,21 +1,21 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: apps/v1      # 1. The API version dictating the schema rules
+kind: Deployment         # 2. What kind of object we are creating
 metadata:
-  name: zomato
+  name: zomato           # 3. The unique name of this deployment manager
   labels:
-    app: zomato
+    app: zomato          # 4. A tag used to organize/filter objects
 spec:
-  replicas: 2
+  replicas: 2            # 5. Tell the Scheduler to run exactly 2 copies (Pods)
   selector:
     matchLabels:
-      app: zomato
-  template:
+      app: zomato        # 6. Crucial! The manager uses this tag to find its pods
+  template:              # 7. The blueprint for the individual pods
     metadata:
       labels:
-        app: zomato
+        app: zomato      # 8. The tag stamped onto the actual containers
     spec:
       containers:
-      - name: zomato
-        image: kastrov/zomato:latest
+      - name: zomato     # 9. The name of the container inside the pod
+        image: kastrov/zomato:latest  # 10. The Docker image to pull from DockerHub
         ports:
-        - containerPort: 3000
+        - containerPort: 3000         # 11. The port your Node.js code listens on inside the container
