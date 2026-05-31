@@ -48,7 +48,7 @@ During the deployment of the networking layer, I encountered and resolved severa
 ---
 
 ### 📹 Architecture Walkthrough Video:  
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](YOUR_YOUTUBE_LINK_HERE)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtu.be/0oXlDwb7FCw)
 
 ---
 
