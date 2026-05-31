@@ -4,12 +4,10 @@ metadata:
   name: zomato-ingress
   namespace: default
   annotations:
-    # This magic annotation tells Kubernetes to spin up an AWS Application Load Balancer
-    kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
-    # Tells the ALB to forward traffic directly to the backend target groups
     alb.ingress.kubernetes.io/target-type: ip
 spec:
+  ingressClassName: alb
   rules:
     - http:
         paths:
